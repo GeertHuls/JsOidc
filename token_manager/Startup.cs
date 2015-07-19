@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Web.Http;
+using JavaScriptImplicitClient_Simple;
 using Microsoft.Owin;
 using Owin;
-using System.Web.Http;
+using Thinktecture.IdentityServer.AccessTokenValidation;
 
-[assembly: OwinStartup(typeof(JavaScriptImplicitClient_Simple.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
 namespace JavaScriptImplicitClient_Simple
 {
@@ -12,10 +12,10 @@ namespace JavaScriptImplicitClient_Simple
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseIdentityServerBearerTokenAuthentication(new Thinktecture.IdentityServer.AccessTokenValidation.IdentityServerBearerTokenAuthenticationOptions
+            app.UseIdentityServerBearerTokenAuthentication(new IdentityServerBearerTokenAuthenticationOptions
             {
-                Authority = "https://localhost:44333/core",
-                RequiredScopes = new string[] { "api1" }
+                Authority = "https://secured.local:449/identityserver/core",
+                RequiredScopes = new [] { "api1" }
             });
 
             var config = new HttpConfiguration();
