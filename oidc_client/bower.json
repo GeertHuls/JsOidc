@@ -1,0 +1,20 @@
+{
+  "name": "oidc_client",
+  "version": "0.0.0",
+  "homepage": "https://github.com/GeertHuls/JsOidc",
+  "authors": [
+    "Geert Huls <geert.huls82@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "oidc-client": "~0.2.1"
+  }
+}
