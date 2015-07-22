@@ -6,3 +6,4 @@ obj/
 node_modules/
 Components/
 oidc_client/js
+token_manager/js

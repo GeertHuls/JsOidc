@@ -1,0 +1,19 @@
+{
+  "name": "token_manager",
+  "version": "0.0.0",
+  "homepage": "https://github.com/GeertHuls/JsOidc",
+  "authors": [
+    "Geert Huls <geert.huls82@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "oidc-token-manager": "~0.1.2"
+  }
+}
