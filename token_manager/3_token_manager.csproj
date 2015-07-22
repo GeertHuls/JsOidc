@@ -105,7 +105,7 @@
     <Content Include="callback.html" />
     <Content Include="frame.html" />
     <Content Include="js\jquery-2.1.0.min.js" />
-    <Content Include="js\oidc-token-manager.js" />
+    <Content Include="js\oidc-token-manager\dist\oidc-token-manager.js" />
     <Content Include="modal.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
